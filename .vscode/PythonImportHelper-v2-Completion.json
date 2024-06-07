@@ -1,0 +1,56 @@
+[
+    {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "webbrowser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
+        "documentation": {}
+    },
+    {
+        "label": "wordArrays",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "wordArrays = [\n    \"Welcome Back to our (ZINA) hub\",\n    \"எங்கள் (ZINA) மையத்திற்கு மீண்டும் வரவேற்கிறோம்\",\n    \"අපගේ (ZINA) මධ්‍යස්ථානය වෙත නැවත සාදරයෙන් පිළිගනිමු\",\n]\n# emojiArrays = [\":)\", \":(\", \";)\", \":p\", \"8-)\", \":(\", \":-/\", \"<3\"]\n# lower = \"abcdefghijklmnopqrstuvwxyz\"\n# upper = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n# number = \"0123456789\"\n# symbol = \"!@#$%&\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "count = 1\nwhile count <= 1899:\n    # useForAll = lower + upper + number + symbol\n    # length = 12\n    # temp = random.sample(useForAll, length)\n    # answer = \"\".join(temp)\n    for word in wordArrays:\n        pyautogui.typewrite(f\"{count}. {word}\")\n        pyautogui.press(\"enter\")\n        time.sleep(0.3)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "URLs",
+        "kind": 5,
+        "importPath": "open_multiple_tabs",
+        "description": "open_multiple_tabs",
+        "peekOfCode": "URLs = [\"https://www.python.org\", \"https://www.example.com\", \"https://www.google.com\"]\nfor _ in range(9):\n    for url in URLs:\n        webbrowser.open_new_tab(url)\n    time.sleep(0.3)",
+        "detail": "open_multiple_tabs",
+        "documentation": {}
+    }
+]
